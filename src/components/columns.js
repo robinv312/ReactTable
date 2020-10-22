@@ -1,27 +1,32 @@
 
 
 import { format } from 'date-fns'
+import { ColumnFilter } from './ColumnFilter'
+
 export const COLUMNS = [
     {
         Header: 'Id',
         accessor: 'id',
-        Footer: 'Id'
+        Footer: 'Id',
+        disableFilters: true
     },
     {
         Header: 'First Name',
         accessor: 'first_name',
         Footer: 'First Name'
+
     },
     {
         Header: 'Last Name',
         accessor: 'last_name',
         Footer: 'Last Name'
+
     },
     {
         Header: 'Date of Birth',
         accessor: 'date_of_birth',
         Footer: 'Date of Birth',
-        Cell:({value})=>{return format(new Date(value),'dd/mm/yyyy')}
+        Cell: ({ value }) => { return format(new Date(value), 'dd/mm/yyyy') }
     },
     {
         Header: 'Country',
