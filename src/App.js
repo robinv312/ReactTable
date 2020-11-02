@@ -4,12 +4,13 @@ import './App.css';
 import { SortingTable } from './components/SortingTable';
 import { FilteringTable } from './components/FilteringTable';
 import { PaginationTable } from './components/PaginationTable';
+import { ColumnOrder } from './components/ColumnOrder';
 
 
 function App() {
   return (
     <div className="App">
-     <PaginationTable/>
+     <ColumnOrder/>
     </div>
   );
 }
